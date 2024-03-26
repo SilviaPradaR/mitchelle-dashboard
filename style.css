@@ -275,6 +275,11 @@ main .nav-icon{
         
     }
 
+    .nav-link:focus{
+        color: var(--link-active-color);
+    }
+    
+
     @media (max-width: 1199px) {
         .cards-section div:nth-child(3), .cards-section div:last-child {
             margin-top: 10px;
