@@ -269,6 +269,9 @@ main .nav-icon{
     main .dropdown-profile{
         font-size: 14px;
     }
+    #settings-icon-responsive{
+        color: var(--sidebar-text-color);
+    }
 
     @media (max-width: 1199px) {
         .cards-section div:nth-child(3), .cards-section div:last-child {
@@ -323,5 +326,9 @@ main .nav-icon{
           }
           .main-container{
             margin-left: 60px;
+            padding: 20px;
+          }
+          main .nav-icon{
+            padding-right: 0px;
           }
     }
