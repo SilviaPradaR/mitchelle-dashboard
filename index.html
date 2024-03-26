@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,14 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-
 </head>
 
 <body>
     <div class="wrapper">
+        <!-- Sidebar -->
         <nav id="sidebar" class="sidebar h-100">
             <div class="sidebar-container pt-5">
+                <!-- Logo -->
                 <a href="/"
                     class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">
                     <svg class="bi pe-none me-md-2" id="logo" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -40,6 +43,7 @@
                     </svg>
                     <span class="dashboard-title">Dashboard Kit</span>
                 </a>
+                <!-- Navigation Links -->
                 <ul class="nav nav-pills flex-column mb-auto mt-5">
                     <li class="px-md-3 py-2">
                         <a href="#" class="nav-link" aria-current="page">
@@ -109,13 +113,17 @@
                 </ul>
             </div>
         </nav>
-
+        <!-- Main Content -->
         <div class="main-container">
             <main>
+                <!-- Navigation Bar -->
                 <nav class="navbar navbar-expand navbar-light navbar-bg px-3">
+                    <!-- Section Title -->
                     <h2>Overview</h2>
+                    <!-- Navigation Bar Content -->
                     <div class="navbar-collapse collapse">
                         <ul class="navbar-nav navbar-align">
+                            <!-- Form - Search -->
                             <form>
                                 <div class="input-group input-group-navbar">
                                     <input type="text" class="form-control d-none d-lg-inline-block" placeholder=""
@@ -150,7 +158,8 @@
                                         <a href="#" class="list-group-item">
                                             <div class="row g-0 align-items-center">
                                                 <div class="col-md-2 col-12">
-                                                    <i class="text-danger d-none d-md-block" data-feather="alert-circle"></i>
+                                                    <i class="text-danger d-none d-md-block"
+                                                        data-feather="alert-circle"></i>
                                                 </div>
                                                 <div class="col-md-10 col-12">
                                                     <div class="text-dark">Update completed</div>
@@ -187,7 +196,7 @@
                                 <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
                                     data-bs-toggle="dropdown">
                                     <span class="profile-name  me-1">Jones Ferdinand</span>
-                                    <img src="img/photo.png" class="avatar img-fluid rounded-circle" alt="Chris Wood" />
+                                    <img src="img/photo.png" class="img-fluid rounded-circle" alt="profile-photo" />
                                 </a>
                                 <div class="dropdown-menu dropdown-profile dropdown-menu-end">
                                     <a class='dropdown-item' href='#'> Profile</a>
@@ -201,9 +210,11 @@
                         </ul>
                     </div>
                 </nav>
-
+                <!-- Main Content Container -->
                 <div class="container-fluid">
+                    <!-- Cards Section -->
                     <div class="row cards-section mt-4">
+                        <!-- Cards -->
                         <div class="col-xl col-md-6 col-12">
                             <div class="card text-center">
                                 <div class="card-body">
@@ -237,17 +248,20 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- Trends Section -->
                     <div class="row trends-section">
                         <div class="col">
                             <div class="card mb-4 mt-4">
                                 <div class="row g-0">
                                     <div class="col-xl-8">
+                                        <!-- Card Header with Title and Timestamp -->
                                         <div class="card-header">
                                             <h5 class="card-header-title">Today's trends</h5>
-                                            <div class="card-header-subtitle d-flex flex-column flex-md-row justify-content-between">
+                                            <div
+                                                class="card-header-subtitle d-flex flex-column flex-md-row justify-content-between">
                                                 <h6 class="card-header-subtitle gray-text">as of 25 May 2019, 09:41 PM
                                                 </h6>
+                                                <!-- Graph Legend -->
                                                 <div class="card-header-legend d-flex justify-content-end mt-md-0 mt-3">
                                                     <h5
                                                         class="card-subtitle gray-text mb-0 ms-4 d-flex align-items-center">
@@ -262,6 +276,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- Trend Graph -->
                                         <div class="card-img">
                                             <img class="w-100" src="/img/graph.png" alt="graph">
                                         </div>
@@ -303,8 +318,9 @@
                         </div>
 
                     </div>
-
+                    <!-- Tickets and Tasks Section -->
                     <div class="row tickets-tasks-section">
+                        <!-- Tickets Container -->
                         <div class="col-xl-6 col-12 tickets-container">
                             <div class="card pb-0 h-100">
                                 <div class="card-header p-4">
@@ -318,8 +334,10 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Ticket List -->
                                 <div class="card-body p-0 pb-2">
                                     <div class="list-group list-group-flush">
+                                        <!-- Ticket Items -->
                                         <div
                                             class="list-group-item d-flex justify-content-between align-items-center px-4 py-3">
                                             <h6>Waiting on Feature Request</h6>
@@ -344,7 +362,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- Tasks Container -->
                         <div class="col-xl-6 col-12 tasks-container">
                             <div class="card pb-0">
                                 <div class="card-header p-4">
@@ -358,24 +376,22 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Task List -->
                                 <div class="card-body p-0 pb-2">
                                     <div class="list-group list-group-flush">
+                                        <!-- Task Items -->
                                         <label class="list-group-item d-flex gap-3 align-items-center px-4 py-3">
-
                                             <span class="create-task">
                                                 Create new task
-
                                             </span>
                                             <button type="button"
                                                 class="btn ms-auto btn-new-task bg-default d-flex align-items-center justify-content-center"
                                                 data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-
                                                 <svg class="bi pe-none" width="12" height="12">
                                                     <use class="text-center" xlink:href="icons/plus.svg#plus" />
                                                 </svg>
-
                                             </button>
-
+                                            <!-- Modal-create task -->
                                             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
                                                 data-bs-keyboard="false" tabindex="-1"
                                                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -418,15 +434,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </label>
-
                                         <label class="list-group-item d-flex gap-3 px-4 py-3 align-items-center">
                                             <input class="form-check-input flex-shrink-0 mt-0" type="radio"
                                                 name="listGroupRadios" id="listGroupRadios1" value="" checked>
                                             <span class="task">
                                                 Finish ticket update
-
                                             </span>
                                             <span
                                                 class="badge bg-urgent text-uppercase ms-auto align-content-center">Urgent</span>
@@ -436,7 +449,6 @@
                                                 name="listGroupRadios" id="listGroupRadios2" value="">
                                             <span class="task">
                                                 Create new ticket example
-
                                             </span>
                                             <span
                                                 class="badge bg-new text-uppercase ms-auto align-content-center">New</span>
@@ -446,15 +458,11 @@
                                                 name="listGroupRadios" id="listGroupRadios3" value="">
                                             <span class="task">
                                                 Update ticket report
-
                                             </span>
                                             <span
                                                 class="badge bg-default text-uppercase ms-auto align-content-center">Default</span>
                                         </label>
-
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -462,8 +470,7 @@
                 </div>
             </main>
         </div>
-
-    </div>  
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
