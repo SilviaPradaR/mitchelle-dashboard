@@ -96,6 +96,13 @@ h2 {
     color: var(--link-active-color);
 
 }
+.sidebar li a svg{
+    opacity: 0.4;
+
+}
+.sidebar li:hover a svg{
+    opacity: 1;
+}
 
 /*----------------MAIN----------------*/
 
