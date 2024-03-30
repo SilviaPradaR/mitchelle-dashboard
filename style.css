@@ -231,6 +231,10 @@ main .dropdown-profile {
     border-bottom: none;
 }
 
+.trends-section .card {
+    overflow: hidden;
+}
+
 .trends-section .card-header {
     padding: 32px 0 0 32px;
 }
