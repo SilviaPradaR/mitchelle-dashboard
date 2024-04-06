@@ -1,7 +1,8 @@
 async function fetchData() {
     try {
-        const temp = await fetch("../data/content.json");
+        const temp = await fetch(`../data/content.json`);
         const data = await temp.json();
+        console.log(data)
 
         const title = document.querySelector('.dashboard-title');
         title.textContent = data.siteName;
