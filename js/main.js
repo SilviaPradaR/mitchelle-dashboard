@@ -1,12 +1,12 @@
 async function fetchData() {
     try {
-        console.log("hola")
         const temp = await fetch("../data/content.json")
         const data = await temp.json();
 
         const title = document.querySelector('.dashboard-title');
         title.textContent = data.siteName;
-        const navList = document.getElementById('navList');       
+        const navList = document.getElementById('navList');
+        const infoCardsContainer = document.querySelector('.cards-section');        
 
 
         data.sidebarMenu.forEach((item, index) => {
@@ -34,6 +34,20 @@ async function fetchData() {
 
             listItem.appendChild(link);
             navList.appendChild(listItem);
+        });
+        
+        data.infoCards.forEach(card => {
+            const cardElement = document.createElement('div');
+            cardElement.classList.add('col-xl', 'col-md-6', 'col-12');
+            cardElement.innerHTML = `
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h6 class="card-title gray-text mb-2">${card.title}</h6>
+                            <span class="card-info mb-0">${card.value}</span>
+                        </div>
+                    </div>
+                `;
+            infoCardsContainer.appendChild(cardElement);
         });
 
 
