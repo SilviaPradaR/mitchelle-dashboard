@@ -1,0 +1,148 @@
+{
+    "siteName": "Dashboard Kit",
+    "profileName": "Jones Ferdinand",
+    "page": "Overview",
+    "sidebarMenu": [
+        {
+            "url": "/",
+            "text": "Overview",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": "false"
+        },
+        {
+            "url": "/",
+            "text": "Tickets",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": "false"
+        },
+        {
+            "url": "/",
+            "text": "Ideas",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": "false"
+        },
+        {
+            "url": "/",
+            "text": "Contacts",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": "false"
+        },
+        {
+            "url": "/",
+            "text": "Agents",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": "false"
+        },
+        {
+            "url": "/",
+            "text": "Articles",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": "false"
+        },
+        {
+            "url": "/",
+            "text": "Settings",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": "false"
+        },
+        {
+            "url": "/",
+            "text": "Subscription",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": "false"
+        }
+    ],
+    "cards": [
+        {
+            "title": "Unresolved",
+            "value": 70
+        },
+        {
+            "title": "Overdue",
+            "value": 16
+        },
+        {
+            "title": "Open",
+            "value": 43
+        },
+        {
+            "title": "Onhold",
+            "value": 64
+        }
+    ],
+    "trendsSection": {
+        "title": "Today's trends",
+        "timestamp": "as of 25 May 2019, 09:41 PM",
+        "graphImage": "/img/graph.png",
+        "additionalInfo": [
+            {
+                "title": "Resolved",
+                "value": "449"
+            },
+            {
+                "title": "Received",
+                "value": "426"
+            },
+            {
+                "title": "Average first response time",
+                "value": "33m"
+            },
+            {
+                "title": "Average response time",
+                "value": "3h 8m"
+            },
+            {
+                "title": "Resolution within SLA",
+                "value": "94%"
+            }
+        ]
+    },
+    "ticketsSection": {
+        "title": "Unresolved tickets",
+        "group": "Support",
+        "ticketDetails": [
+            {
+                "name": "Waiting on Feature Request",
+                "value": "4238"
+            },
+            {
+                "name": "Awaiting Customer Response",
+                "value": "1005"
+            },
+            {
+                "name": "Awaiting Developer Fix",
+                "value": "914"
+            },
+            {
+                "name": "Pending",
+                "value": "281"
+            }
+        ]
+    },
+    "tasksSection": {
+        "title": "Tasks",
+        "date": "Today",
+        "taskList": [
+            {
+                "name": "Finish ticket update",
+                "priority": "Urgent"
+            },
+            {
+                "name": "Create new ticket example",
+                "priority": "New"
+            },
+            {
+                "name": "Update ticket report",
+                "priority": "Default"
+            }
+        ]
+    }
+}
