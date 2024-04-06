@@ -1,6 +1,6 @@
 async function fetchData() {
     try {
-        const temp = await fetch("../data/content.json")
+        const temp = await fetch("../data/content.json");
         const data = await temp.json();
 
         const title = document.querySelector('.dashboard-title');
@@ -51,9 +51,9 @@ async function fetchData() {
             infoCards.appendChild(cardElement);
         });
 
-        document.getElementById('trends-title').textContent = trendsSection.title; 
+        document.getElementById('trends-title').textContent = trendsSection.title;
         document.getElementById('trends-subtitle').textContent = trendsSection.timestamp;
-       
+
         trendsSection.additionalInfo.forEach(info => {
             additionalInfoItems.innerHTML += `
                 <div class="list-group-item list-group-item-action d-flex flex-column justify-content-center align-items-center p-4">
