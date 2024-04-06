@@ -4,9 +4,10 @@ async function fetchData() {
         const temp = await fetch("../data/content.json")
         const data = await temp.json();
 
-        const navList = document.getElementById('navList');
         const title = document.querySelector('.dashboard-title');
         title.textContent = data.siteName;
+        const navList = document.getElementById('navList');       
+
 
         data.sidebarMenu.forEach((item, index) => {
             const listItem = document.createElement('li');
