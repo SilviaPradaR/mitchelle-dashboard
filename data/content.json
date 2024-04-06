@@ -60,7 +60,7 @@
             "newTab": "false"
         }
     ],
-    "cards": [
+    "infoCards": [
         {
             "title": "Unresolved",
             "value": 70

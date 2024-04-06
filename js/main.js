@@ -6,8 +6,9 @@ async function fetchData() {
         const title = document.querySelector('.dashboard-title');
         title.textContent = data.siteName;
         const navList = document.getElementById('navList');
-        const infoCardsContainer = document.querySelector('.cards-section');        
-
+        const infoCards = document.querySelector('.cards-section');
+        const trendsSection = data.trendsSection;
+        const additionalInfoItems = document.getElementById('trends-cards');
 
         data.sidebarMenu.forEach((item, index) => {
             const listItem = document.createElement('li');
@@ -35,7 +36,7 @@ async function fetchData() {
             listItem.appendChild(link);
             navList.appendChild(listItem);
         });
-        
+
         data.infoCards.forEach(card => {
             const cardElement = document.createElement('div');
             cardElement.classList.add('col-xl', 'col-md-6', 'col-12');
@@ -47,9 +48,20 @@ async function fetchData() {
                         </div>
                     </div>
                 `;
-            infoCardsContainer.appendChild(cardElement);
+            infoCards.appendChild(cardElement);
         });
 
+        document.getElementById('trends-title').textContent = trendsSection.title; 
+        document.getElementById('trends-subtitle').textContent = trendsSection.timestamp;
+       
+        trendsSection.additionalInfo.forEach(info => {
+            additionalInfoItems.innerHTML += `
+                <div class="list-group-item list-group-item-action d-flex flex-column justify-content-center align-items-center p-4">
+                    <h6 class="card-title gray-text mb-2">${info.title}</h6>
+                    <span class="card-info h2 mb-0">${info.value}</span>
+                </div>
+            `;
+        });
 
     } catch (error) {
         console.log(error);
