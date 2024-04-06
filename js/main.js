@@ -2,7 +2,6 @@ async function fetchData() {
     try {
         const temp = await fetch(`./data/content.json`);
         const data = await temp.json();
-        console.log(data)
 
         const title = document.querySelector('.dashboard-title');
         title.textContent = data.siteName;
@@ -10,6 +9,10 @@ async function fetchData() {
         const infoCards = document.querySelector('.cards-section');
         const trendsSection = data.trendsSection;
         const additionalInfoItems = document.getElementById('trends-cards');
+        const ticketsSection = data.ticketsSection;
+        const ticketsList = document.getElementById("tickets-list");
+        const tasksSection = data.tasksSection;
+        const tasksList = document.getElementById("tasks-list");
 
         data.sidebarMenu.forEach((item, index) => {
             const listItem = document.createElement('li');
@@ -62,6 +65,37 @@ async function fetchData() {
                     <span class="card-info h2 mb-0">${info.value}</span>
                 </div>
             `;
+        });
+
+        document.getElementById('tickets-title').textContent = ticketsSection.title;
+        document.getElementById('tickets-group').textContent = ticketsSection.group;
+
+        ticketsSection.ticketDetails.forEach(ticket => {
+            ticketsList.innerHTML += `
+                <div class="list-group-item d-flex justify-content-between align-items-center px-4 py-3">
+                    <h6>${ticket.name}</h6>
+                    <p class="gray-text">${ticket.value}</p>
+                </div>
+            `;
+        });
+
+        document.getElementById('tasks-title').textContent = tasksSection.title;
+        document.getElementById('tasks-subtitle').textContent = tasksSection.date;
+
+        data.tasksSection.taskList.forEach(task => {
+            const taskItem = document.createElement('label');
+            taskItem.classList.add('list-group-item', 'd-flex', 'gap-3', 'px-4', 'py-3', 'align-items-center');
+
+            taskItem.innerHTML = `
+                <input class="form-check-input flex-shrink-0 mt-0" type="radio" name="listGroupRadios" value="">
+                <span class="task">${task.name}</span>
+                <span class="badge bg-${task.priority.toLowerCase()} text-uppercase ms-auto align-content-center">${task.priority}</span> 
+            `;
+            
+            tasksList.appendChild(taskItem);
+            
+            const firstInput = tasksList.querySelector('input[type="radio"]');
+            firstInput.checked = true;
         });
 
     } catch (error) {
