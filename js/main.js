@@ -24,7 +24,7 @@ async function fetchData() {
             link.setAttribute('aria-current', 'page');
             link.innerHTML = `
         <svg class="bi pe-none me-md-3" width="16" height="16">
-            <use xlink:href="../icons/${item.text.toLowerCase()}.svg#${item.text.toLowerCase()}" fill="#9FA2B4" />
+            <use xlink:href="./icons/${item.text.toLowerCase()}.svg#${item.text.toLowerCase()}" fill="#9FA2B4" />
         </svg>
         <span>${item.text}</span>
     `;
