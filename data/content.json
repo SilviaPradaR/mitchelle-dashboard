@@ -4,56 +4,56 @@
     "page": "Overview",
     "sidebarMenu": [
         {
-            "url": "/",
+            "url": "./",
             "text": "Overview",
             "linkId": "",
             "linkClass": "",
             "newTab": "false"
         },
         {
-            "url": "/",
+            "url": "./",
             "text": "Tickets",
             "linkId": "",
             "linkClass": "",
             "newTab": "false"
         },
         {
-            "url": "/",
+            "url": "./",
             "text": "Ideas",
             "linkId": "",
             "linkClass": "",
             "newTab": "false"
         },
         {
-            "url": "/",
+            "url": "./",
             "text": "Contacts",
             "linkId": "",
             "linkClass": "",
             "newTab": "false"
         },
         {
-            "url": "/",
+            "url": "./",
             "text": "Agents",
             "linkId": "",
             "linkClass": "",
             "newTab": "false"
         },
         {
-            "url": "/",
+            "url": "./",
             "text": "Articles",
             "linkId": "",
             "linkClass": "",
             "newTab": "false"
         },
         {
-            "url": "/",
+            "url": "./",
             "text": "Settings",
             "linkId": "",
             "linkClass": "",
             "newTab": "false"
         },
         {
-            "url": "/",
+            "url": "./",
             "text": "Subscription",
             "linkId": "",
             "linkClass": "",
