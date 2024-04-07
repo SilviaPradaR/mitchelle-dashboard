@@ -113,11 +113,14 @@
 
 // fetchData();
 
+// Function to fetch data from JSON file and populate the dashboard
 async function fetchData() {
     try {
+        // Fetching data from JSON file
         const response = await fetch(`./data/content.json`);
         const data = await response.json();
         
+         // Populating dashboard title
         const title = document.querySelector('.dashboard-title');
         title.textContent = data.siteName;
         
@@ -132,7 +135,7 @@ async function fetchData() {
     }
 }
 
-// Funciones para renderizar diferentes secciones del sitio
+// Function to render sidebar menu
 function renderSidebar(sidebarMenu) {
     const navList = document.getElementById('navList');    
     sidebarMenu.forEach((item, index) => {
@@ -162,6 +165,7 @@ function renderSidebar(sidebarMenu) {
     });
 }
 
+// Function to render info cards
 function renderInfoCards(infoCards) {
     const cards = document.querySelector('.cards-section');
     infoCards.forEach(card => {
@@ -180,6 +184,7 @@ function renderInfoCards(infoCards) {
 
 }
 
+// Function to render trends section
 function renderTrendsSection(trendsSection) {
     const additionalInfoItems = document.getElementById('trends-cards');
     document.getElementById('trends-title').textContent = trendsSection.title;
@@ -194,6 +199,7 @@ function renderTrendsSection(trendsSection) {
     });
 }
 
+// Function to render tickets section
 function renderTicketsSection(ticketsSection) {
     const ticketsList = document.getElementById("tickets-list");
     document.getElementById('tickets-title').textContent = ticketsSection.title;
@@ -208,6 +214,7 @@ function renderTicketsSection(ticketsSection) {
     });
 }
 
+// Function to render tasks section
 function renderTasksSection(tasksSection) {
     const tasksList = document.getElementById("tasks-list");
     document.getElementById('tasks-title').textContent = tasksSection.title;
@@ -228,7 +235,7 @@ function renderTasksSection(tasksSection) {
     });
 }
 
-// Función para inicializar los tooltips
+// Function to initialize tooltips
 function initializeTooltips() {
     const tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     tooltipTriggerList.forEach(tooltipTriggerEl => {
@@ -236,7 +243,7 @@ function initializeTooltips() {
     })
 }
 
-// Iniciar el proceso de carga de datos al cargar el DOM
+// Initiating the data fetching process upon DOM load
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
 });
